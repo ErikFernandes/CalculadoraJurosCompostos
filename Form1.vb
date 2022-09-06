@@ -14,6 +14,7 @@
         ValorApli.Text = ""
         Rendi.Text = ""
         Tempo.Text = ""
+        valorAport.Text = ""
 
     End Sub
 
