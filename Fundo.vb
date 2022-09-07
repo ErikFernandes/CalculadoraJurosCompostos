@@ -18,15 +18,6 @@
 
     End Sub
 
-    Private Sub MostrarFormularioImpressao()
-
-        Dim frm As New Form2()
-        frm.Owner = Me
-        frm.Show()
-
-    End Sub
-
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
 
@@ -46,7 +37,11 @@
 
                 vjuros = resultTotal - (cValor + (cApor * t))
 
-                MostrarFormularioImpressao()
+                Using F As New FormImpressao()
+
+                    F.ShowDialog()
+
+                End Using
 
             ElseIf (valorAport.Text = "") Then
 
@@ -56,7 +51,11 @@
                 resultTotal = (cValor * (1 + i) ^ t)
                 vjuros = resultTotal - Double.Parse(ValorApli.Text)
 
-                MostrarFormularioImpressao()
+                Using F As New FormImpressao()
+
+                    F.ShowDialog()
+
+                End Using
 
             End If
 
