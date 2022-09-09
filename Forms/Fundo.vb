@@ -7,6 +7,29 @@
     Public t As Decimal
     Public cApor As Decimal
 
+    Private Sub ValorApli_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ValorApli.KeyPress
+
+        FiltroCampo(sender, e)
+
+    End Sub
+
+    Private Sub Rendi_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Rendi.KeyPress
+
+        FiltroCampo(sender, e)
+
+    End Sub
+
+    Private Sub ValorAport_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ValorAport.KeyPress
+
+        FiltroCampo(sender, e)
+
+    End Sub
+
+    Private Sub Tempo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Tempo.KeyPress
+
+        FiltroCampo(sender, e)
+
+    End Sub
 
 
     Sub Clean()
@@ -14,7 +37,7 @@
         ValorApli.Text = ""
         Rendi.Text = ""
         Tempo.Text = ""
-        valorAport.Text = ""
+        ValorAport.Text = ""
 
     End Sub
 
@@ -27,11 +50,11 @@
             i = Double.Parse(Rendi.Text)
             t = Integer.Parse(Tempo.Text)
 
-            If (valorAport.Text <> "") Then
+            If (ValorAport.Text <> "") Then
 
                 i /= 100
 
-                cApor = Double.Parse(valorAport.Text)
+                cApor = Double.Parse(ValorAport.Text)
 
                 resultTotal = cApor * (((1 + i) ^ t - 1) / i) + cValor * (1 + i) ^ t
 
@@ -43,7 +66,7 @@
 
                 End Using
 
-            ElseIf (valorAport.Text = "") Then
+            ElseIf (ValorAport.Text = "") Then
 
 
                 i /= 100

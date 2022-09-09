@@ -42,7 +42,7 @@ Partial Class Fundo
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.valorAport = New System.Windows.Forms.TextBox()
+        Me.ValorAport = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel.SuspendLayout()
         Me.SuspendLayout()
@@ -251,14 +251,14 @@ Partial Class Fundo
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Aporte Mensal"
         '
-        'valorAport
+        'ValorAport
         '
-        Me.valorAport.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.valorAport.Location = New System.Drawing.Point(211, 236)
-        Me.valorAport.MaxLength = 7
-        Me.valorAport.Name = "valorAport"
-        Me.valorAport.Size = New System.Drawing.Size(79, 22)
-        Me.valorAport.TabIndex = 10
+        Me.ValorAport.Font = New System.Drawing.Font("Courier New", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ValorAport.Location = New System.Drawing.Point(211, 236)
+        Me.ValorAport.MaxLength = 7
+        Me.ValorAport.Name = "ValorAport"
+        Me.ValorAport.Size = New System.Drawing.Size(79, 22)
+        Me.ValorAport.TabIndex = 10
         '
         'Label9
         '
@@ -277,7 +277,7 @@ Partial Class Fundo
         Me.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ClientSize = New System.Drawing.Size(350, 421)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.valorAport)
+        Me.Controls.Add(Me.ValorAport)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label7)
@@ -330,6 +330,6 @@ Partial Class Fundo
     Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label8 As Label
-    Friend WithEvents valorAport As TextBox
+    Friend WithEvents ValorAport As TextBox
     Friend WithEvents Label9 As Label
 End Class
