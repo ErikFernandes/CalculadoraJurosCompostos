@@ -7,4 +7,13 @@
 
     End Sub
 
+    Private Sub FormImpressao_KeyPress(sender As Object, e As KeyPressEventArgs) Handles MyBase.KeyPress
+
+        If Asc(e.KeyChar) = 27 Then
+
+            Me.Close()
+
+        End If
+
+    End Sub
 End Class

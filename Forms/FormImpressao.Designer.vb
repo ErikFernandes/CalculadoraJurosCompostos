@@ -74,7 +74,7 @@ Partial Class FormImpressao
         Me.ResultJuros.TabStop = False
         Me.ResultJuros.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Form2
+        'FormImpressao
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -87,7 +87,7 @@ Partial Class FormImpressao
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Form2"
+        Me.Name = "FormImpressao"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Valor do Retorno"

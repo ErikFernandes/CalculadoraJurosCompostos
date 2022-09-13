@@ -32,6 +32,7 @@
     End Sub
 
 
+
     Sub Clean()
 
         ValorApli.Text = ""
